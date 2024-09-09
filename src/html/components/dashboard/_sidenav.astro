@@ -18,7 +18,7 @@ const htmlPath = convertPathToHtml(path);
       />
       <!--end::Brand Image-->
       <!--begin::Brand Text-->
-      <span class="brand-text fw-light">AdminLTE 4</span>
+      <span class="brand-text fw-light">ADECO</span>
       <!--end::Brand Text-->
     </a>
     <!--end::Brand Link-->
@@ -55,7 +55,7 @@ const htmlPath = convertPathToHtml(path);
                 <p>Dashboard v1</p>
               </a>
             </li>
-            <li class="nav-item">
+            <!--<li class="nav-item">
               <a
                 href={htmlPath + "/index2.html"}
                 class:list={["nav-link", page === "index2" && "active"]}
@@ -72,19 +72,43 @@ const htmlPath = convertPathToHtml(path);
                 <i class="nav-icon bi bi-circle"></i>
                 <p>Dashboard v3</p>
               </a>
-            </li>
+            </li>-->
           </ul>
         </li>
         <li class="nav-item">
           <a
-            href={htmlPath + "/generate/theme.html"}
+            href={htmlPath + "/generate/create-new-user.html"}
             class:list={["nav-link", page === "theme-generate" && "active"]}
           >
             <i class="nav-icon bi bi-palette"></i>
-            <p>Theme Generate</p>
+            <p>Control de registros</p>
           </a>
         </li>
-        <li class:list={["nav-item", mainPage === "widgets" && "menu-open"]}>
+
+        <li class="nav-item">
+          <a
+            href="#"
+            class:list={["nav-link", page === "theme-generate" && "active"]}
+          >
+            <i class="bi bi-clipboard2-data"></i>
+            <p>Contabilidad</p>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a
+            href="#"
+            class:list={["nav-link", page === "theme-generate" && "active"]}
+          >
+            <i class="bi bi-file-earmark-medical"></i>
+            <p>Reportes</p>
+          </a>
+        </li>
+
+
+
+        <!--Todo estos items estan comentados-->
+        <!--<li class:list={["nav-item", mainPage === "widgets" && "menu-open"]}>
           <a
             href="#"
             class:list={["nav-link", mainPage === "widgets" && "active"]}
@@ -574,7 +598,7 @@ const htmlPath = convertPathToHtml(path);
       </ul>
       <!--end::Sidebar Menu-->
     </nav>
-  </div>
+  </div>-->
   <!--end::Sidebar Wrapper-->
 </aside>
 <!--end::Sidebar-->

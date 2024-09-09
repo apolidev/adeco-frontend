@@ -4,7 +4,7 @@
 
 .login-logo,
 .register-logo {
-  margin-bottom: .9rem;
+  margin-bottom: .1rem;
   font-size: 2.1rem;
   font-weight: 300;
   text-align: center;
@@ -15,18 +15,49 @@
   }
 }
 
-.login-page,
+
 .register-page {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background-image: url("/src/assets/img/abstract_backgrround.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
-.login-box,
+.login-page{
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: center;
+  min-height: 100vh;
+  background-image: url("/src/assets/img/PORTADA.png");
+  background-position: center;
+  background-size: cover;
+}
+
+
 .register-box {
-  width: 360px;
+  width: 600px;
+  padding: 15px;
+  margin: 50px;
+
+  @media (max-width: map-get($grid-breakpoints, sm)) {
+    width: 90%;
+    margin-top: .5rem;
+  }
+
+  .card {
+    margin-bottom: 0;
+  }
+}
+
+.login-box {
+  width: 450px;
+  padding: 15px;
+  margin: 200px;
 
   @media (max-width: map-get($grid-breakpoints, sm)) {
     width: 90%;
