@@ -82,7 +82,15 @@ const htmlPath = convertPathToHtml(path);
                         Apartamentos
                       </p>
                     </a>
-                </li>                
+                </li>   
+                <li class="nav-item">
+                    <a href={htmlPath + "/generate/directive.html"}  class="nav-link">
+                      <i class="nav-icon bi bi-circle"></i>
+                      <p>
+                        Directiva
+                      </p>
+                    </a>
+                </li>              
                 </ul>
               </li>
               <li class="nav-item">
@@ -324,13 +332,56 @@ const htmlPath = convertPathToHtml(path);
                   
 
                   <!--end::Card Body-->
+
+                 
                   <!--begin::Card Footer-->
                     
                   <!--end::Card Footer-->
                 </div>
                 <!--end::Card-->
 
-               
+                <table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Propietario</th>
+      <th scope="col">Residencial</th>
+      <th scope="col">Inquilino</th>
+      <th scope="col">Estatus</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Habitaciones</th>
+      <th scope="col">Baños</th>
+      <th scope="col">Parqueos</th>
+      <th scope="col">Habitaciones de servicio</th>
+      <th scope="col">Área de lavado</th>
+      <th scope="col">Otros detalles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <th scope="row">Andres</th>
+      <th scope="row">Brunis</th>
+      <th scope="row">No definido</th>
+      <th scope="row">Libre</th>
+      <th scope="row">RD$ 10,000</th>
+      <th scope="row">2</th>
+      <th scope="row">1</th>
+      <th scope="row">1</th>
+      <th scope="row">1</th>
+      <th scope="row">1</th>
+      <th scope="row">En buenas condiciones</th>
+      <th scope="row">
+      <button type="button" class="btn btn-danger">Borrar</button>
+      </th>
+      <th scope="row">
+      <button type="button" class="btn btn-info">Editar</button>
+      </th>
+    </tr>
+    
+  </tbody>
+</table>
+
               <!--end::Col-->
             </div>
             <!--end::Row-->
