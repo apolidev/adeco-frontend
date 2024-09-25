@@ -1,0 +1,139 @@
+---
+import Head from "@components/_head.astro";
+import Scripts from "@components/_scripts.astro";
+
+const title = "AdminLTE 4 | Register Page v2";
+const path = "../../../dist";
+const htmlPath = "..";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <!--begin::Head-->
+  <head>
+    <Head title={title} path={path} />
+  </head>
+  <!--end::Head-->
+  <!--begin::Body-->
+  <body class="register-page bg-body-secondary">
+    <div class="register-box">
+      <!-- /.register-logo -->
+      <div class="card card-outline card-primary">
+        <div class="card-header">
+          <a href={htmlPath + "/index2.html"} class="link-dark text-center link-offset-2 link-opacity-100 link-opacity-50-hover">
+            <h1 class="mb-0">
+              <b>ADECO</b>
+            </h1>
+          </a>
+        </div>
+        <div class="card-body register-card-body">
+          <p class="register-box-msg">Registro de nuevo usuario</p>
+
+          <form action={htmlPath + "/index3.html"} method="post">
+            <div class="input-group mb-1">
+              <div class="form-floating">
+                <input id="registerFullName" type="text" class="form-control" placeholder="" />
+                <label for="registerFullName">Nombre completo</label>
+              </div>
+              <div class="input-group-text">
+                <span class="bi bi-person"></span>
+              </div>
+            </div>
+            <div class="input-group mb-1">
+              <div class="form-floating">
+                <input id="registerEmail" type="email" class="form-control" placeholder="" />
+                <label for="registerEmail">Email</label>
+              </div>
+              <div class="input-group-text">
+                <span class="bi bi-envelope"></span>
+              </div>
+            </div>
+            <div class="input-group mb-1">
+              <div class="form-floating">
+                <input id="registerTelefono" type="text" class="form-control" placeholder="" />
+                <label for="registerTelefono">Telefono</label>
+              </div>
+              <div class="input-group-text">
+                <span class="bi bi-telephone"></span>
+              </div>
+            </div>
+
+            <div class="input-group mb-1">
+              <div class="form-floating">
+                <input id="registerRol" type="text" class="form-control" placeholder="" />
+                <label for="registerRol">Rol</label>
+              </div>
+              <div class="input-group-text">
+                <span class="bi bi-person-vcard"></span>
+              </div>
+            </div>
+            <div class="input-group mb-1">
+              <div class="form-floating">
+                <input
+                  id="registerPassword"
+                  type="password"
+                  class="form-control"
+                  placeholder=""
+                />
+                <label for="registerPassword">Password</label>
+              </div>
+              <div class="input-group-text">
+                <span class="bi bi-lock-fill"></span>
+              </div>
+            </div>
+            <div class="input-group mb-1">
+              <div class="form-floating">
+                <input
+                  id="confirmPassword"
+                  type="password"
+                  class="form-control"
+                  placeholder=""
+                />
+                <label for="registerPassword">Confirm password</label>
+              </div>
+              <div class="input-group-text">
+                <span class="bi bi-lock-fill"></span>
+              </div>
+            </div>
+            <!--begin::Row-->
+            <div class="row">
+              <div class="d-inline-flex align-items-center">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    Acepto los <a href="#">términos</a>
+                  </label>
+                </div>
+              </div>
+              <div class="d-grip  gap-2">
+                  <button type="submit" class="btn btn-primary">Registrar</button>
+              </div>
+               <div>      
+            <p class="m-2">
+            <a href="login.html" class="link-primary text-center">
+              Tengo una cuenta
+            </a>
+            </p>
+          </div>
+            </div>
+              <!-- /.col -->
+              
+              <!-- /.col -->
+            </div>
+         
+            <!--end::Row-->
+         
+        <!-- /.register-card-body -->
+      </div>
+    </div>
+    <!-- /.register-box -->
+
+    <Scripts path={path} />
+    <!--end::Script-->
+  </body><!--end::Body-->
+</html>
